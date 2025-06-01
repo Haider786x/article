@@ -10,16 +10,6 @@ function setFirstImageWidth() {
   pic.style.width = contentWidth;
 }
 
-function setFirstImageHeight() {
-  const contentHeight = window.getComputedStyle(content).height;
-
-  // Apply the height directly to the image
-  pic.style.height = contentHeight;
-}
-
-setFirstImageHeight();
-window.addEventListener("resize", setFirstImageHeight);
-
 setFirstImageWidth();
 window.addEventListener("resize", setFirstImageWidth);
 

@@ -7,10 +7,10 @@ body {
   @apply flex justify-center items-center my-45 max-[900px]:flex-col overflow-auto;
 }
 .container_big .pic {
-  @apply w-[30vw] h-auto rounded-s-md;
+  @apply w-[30vw] h-[60vh] rounded-s-md;
 }
 .content {
-  @apply w-[30vw] h-auto rounded-e-md text-wrap bg-white overflow-hidden px-10 py-7 max-[1440px]:w-[40vw]  max-[1100px]:w-[50vw] max-[900px]:h-auto max-[900px]:w-auto;
+  @apply w-[30vw] h-[60vh] rounded-e-md text-wrap bg-white overflow-hidden px-10 py-7 max-[1440px]:w-[40vw]  max-[1100px]:w-[50vw] max-[900px]:h-auto max-[900px]:w-auto;
 }
 .text1 {
   @apply font-bold text-2xl text-[#48556a];
