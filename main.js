@@ -1,24 +1,6 @@
-const logo = document.querySelector(".share-tooltip");
-const container = document.getElementsByClassName("container_big")[0];
-const content = container.getElementsByClassName("content")[0];
-const pic = container.getElementsByClassName("pic")[0];
-var display = 0;
-function setFirstImageWidth() {
-  const contentWidth = window.getComputedStyle(content).width;
+const shareBtn = document.querySelector(".share-btn");
+const sharePopup = document.getElementById("sharePopup");
 
-  // Apply the width directly to the image
-  pic.style.width = contentWidth;
-}
-
-setFirstImageWidth();
-window.addEventListener("resize", setFirstImageWidth);
-
-function hideShow() {
-  if (display == 1) {
-    logo.style.display = "flex";
-    display = 0;
-  } else {
-    logo.style.display = "none";
-    display = 1;
-  }
-}
+shareBtn.addEventListener("click", function () {
+  sharePopup.classList.toggle("active");
+});
